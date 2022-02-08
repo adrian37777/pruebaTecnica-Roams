@@ -1,0 +1,10 @@
+<h2>{{ name }}</h2>
+<h3>Breaking Bad</h3>
+
+<app-buscarPersonajeComponent
+  (onEnter)="enviar($event)"
+></app-buscarPersonajeComponent>
+<span *ngIf="error"> Personaje no existe</span>
+<hr />
+
+<app-mostrarPersonaje [personajes]="personajes"></app-mostrarPersonaje>
