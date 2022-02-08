@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { personajes } from './interface/personajes-interface';
 import { buscadorService } from './service/buscador.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { buscadorService } from './service/buscador.service';
 export class AppComponent implements OnInit {
   name = 'Buscador personajes - Roams';
 
-  personajes: string[] = [];
+  personajes: personajes[] = [];
   error: boolean = false;
   subscription: Subscription;
 
