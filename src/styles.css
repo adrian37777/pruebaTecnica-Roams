@@ -33,6 +33,7 @@ img {
   vertical-align: bottom;
   width: 100%;
   height: 80px;
+  color: gray;
 }
 
 h3 {
@@ -40,4 +41,9 @@ h3 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.pie {
+  width: 100%;
+  text-align: right;
 }
