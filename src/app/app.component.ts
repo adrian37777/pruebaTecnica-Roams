@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   personajes: personajes[] = [];
   error: boolean = false;
   subscription: Subscription;
+  terminoRecibido: string = '';
 
   constructor(public buscadorService: buscadorService) {}
 
@@ -26,6 +27,7 @@ export class AppComponent implements OnInit {
   }
 
   enviar(termino: string) {
+    this.terminoRecibido = termino;
     this.buscadorService.budcarPersonaje(termino).subscribe((data) => {
       this.personajes = data;
 
