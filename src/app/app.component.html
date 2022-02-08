@@ -4,7 +4,8 @@
 <app-buscarPersonajeComponent
   (onEnter)="enviar($event)"
 ></app-buscarPersonajeComponent>
-<span *ngIf="error"> Personaje no existe</span>
+
 <hr />
 
 <app-mostrarPersonaje [personajes]="personajes"></app-mostrarPersonaje>
+<h3 *ngIf="error" class="error">Personaje no encontrado....</h3>
