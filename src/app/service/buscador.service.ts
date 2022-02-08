@@ -17,7 +17,6 @@ export class buscadorService {
 
   mostrarTodos(): Observable<personajes[]> {
     const url = `${this.apyUrl}/characters`;
-    console.log(url);
 
     return this.http.get<personajes[]>(url);
   }
