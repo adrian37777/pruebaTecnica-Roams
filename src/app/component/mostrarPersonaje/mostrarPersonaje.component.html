@@ -1,9 +1,15 @@
 <div class="personaje" *ngFor="let personaje of personajes">
   <div class="imagen"><img [src]="personaje.img" /></div>
-  <h3>{{ personaje.name }} <br /></h3>
-  <span>{{ personaje.nickname }}</span>
+  <h3>{{ personaje.name | titlecase }} <br /></h3>
+  <span>{{ personaje.nickname | titlecase }}</span>
   <div class="informacion">
     <p>{{ personaje.occupation }}</p>
   </div>
-  <p class="pie">{{ personaje.status }}</p>
+  <p
+    class="pie"
+    [class.rojo]="personaje.status === 'Deceased'"
+    [class.verde]="personaje.status === 'Alive'"
+  >
+    {{ personaje.status }}
+  </p>
 </div>

@@ -8,7 +8,7 @@ img {
   width: 100%;
 }
 input {
-  width: 50%;
+  width: 200px;
   height: 20px;
   margin: 2% 2% 2% 0;
 }
@@ -16,9 +16,9 @@ input {
 .personaje {
   display: inline-block;
   width: 100%;
-  max-width: 160px;
+  max-width: 130px;
   height: 380px;
-  margin: 0.5%;
+  margin: 1%;
   vertical-align: top;
   list-style: none;
   padding: 10px;
@@ -45,6 +45,14 @@ input {
   width: 100%;
   height: 80px;
   color: gray;
+}
+
+.rojo {
+  color: red;
+}
+
+.verde {
+  color: green;
 }
 
 h3 {

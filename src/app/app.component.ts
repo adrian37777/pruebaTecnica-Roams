@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
 
   enviar(termino: string) {
     this.terminoRecibido = termino;
-    this.buscadorService.budcarPersonaje(termino).subscribe((data) => {
+    this.buscadorService.buscarPersonaje(termino).subscribe((data) => {
       this.personajes = data;
 
       this.personajes.length == 0 ? (this.error = true) : (this.error = false);

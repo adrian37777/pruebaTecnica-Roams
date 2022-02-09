@@ -9,7 +9,7 @@ export class buscadorService {
 
   constructor(private http: HttpClient) {}
 
-  budcarPersonaje(termino: string): Observable<personajes[]> {
+  buscarPersonaje(termino: string): Observable<personajes[]> {
     const url = `${this.apyUrl}/characters/?name=${termino}`;
 
     return this.http.get<personajes[]>(url);
